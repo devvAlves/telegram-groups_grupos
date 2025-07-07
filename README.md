@@ -12,7 +12,7 @@ Aqui você encontra o site com o maior acervo de **grupos secretos, packs vazado
 - Prévia gratuita disponível
 
 👉 Acesse a versão online do site aqui:  
-🔗 https://teuuser.github.io/Telegram-Groups-Grupos/
+🔗 https://devvalves.github.io/telegram-groups_grupos/
 
 ## 🚀 Palavras-chave (SEO)
 
