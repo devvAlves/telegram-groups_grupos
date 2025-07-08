@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closeButton.addEventListener('click', closePopup);
     }
 
-    // Exemplo: Exibir o popup após 5 segundos
+    // Exibir o popup após 5 segundos
     setTimeout(showPopup, 5000);
 });
 
