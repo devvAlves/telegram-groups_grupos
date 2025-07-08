@@ -136,25 +136,6 @@
         #cta-popup .bg-white {
             max-width: 90%; /* Reduz largura em telas menores */
         }
-
-        /* Estilo para barra de progresso */
-        #cta-popup .progress-bar {
-            width: 80%; /* Limita a largura da barra */
-            max-width: 600px; /* Define um tamanho máximo */
-            height: 20px; /* Altura da barra */
-            background-color: #e5e5e5; /* Cor de fundo */
-            border-radius: 10px; /* Bordas arredondadas */
-            overflow: hidden;
-            position: relative;
-            margin: 0 auto; /* Centraliza horizontalmente */
-        }
-
-        #cta-popup .progress-bar .progress {
-            width: 50%; /* Progresso inicial */
-            height: 100%;
-            background-color: #E50914; /* Cor do progresso */
-            transition: width 0.5s ease; /* Animação suave */
-        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -291,9 +272,6 @@
         <div class="bg-white rounded-xl p-8 max-w-xs w-full text-center shadow-2xl relative">
             <button id="close-cta-popup" class="absolute top-2 right-3 text-black text-2xl font-bold">&times;</button>
             <div id="cta-popup-text" class="text-black text-2xl font-anton mb-6"></div>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
             <a id="cta-popup-btn" href="https://t.me/acessovipremium_bot?start=via_site_popup" target="_blank" class="cta-button font-anton text-xl bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-lg shadow-lg block transition-all duration-200 mt-4"></a>
         </div>
     </div>
