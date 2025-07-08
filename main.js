@@ -258,6 +258,24 @@ function createSmartNotifications() {
     }, interval);
 }
 
+// Função para atualizar a barra de progresso
+function updateProgressBar() {
+    const progressBar = document.querySelector('#cta-popup .progress-bar .progress');
+    if (progressBar) {
+        let progress = parseInt(progressBar.style.width) || 50; // Progresso inicial
+        progress = Math.min(progress + 10, 100); // Incrementa até 100%
+        progressBar.style.width = `${progress}%`;
+
+        // Opcional: fechar popup quando progresso atingir 100%
+        if (progress === 100) {
+            document.getElementById('cta-popup').classList.add('hidden');
+        }
+    }
+}
+
+// Exemplo: Atualizar barra de progresso a cada 2 segundos
+setInterval(updateProgressBar, 2000);
+
 // Função para centralizar popups em dispositivos móveis
 function adjustPopupPosition() {
     const popup = document.getElementById('cta-popup');
@@ -284,6 +302,33 @@ function adjustToastPosition() {
 window.addEventListener('resize', () => {
     adjustPopupPosition();
     adjustToastPosition();
+});
+
+// Função para exibir o popup CTA
+function showPopup() {
+    const popup = document.getElementById('cta-popup');
+    if (popup) {
+        popup.classList.add('active');
+    }
+}
+
+// Função para fechar o popup CTA
+function closePopup() {
+    const popup = document.getElementById('cta-popup');
+    if (popup) {
+        popup.classList.remove('active');
+    }
+}
+
+// Adicionar evento ao botão de fechar
+document.addEventListener('DOMContentLoaded', () => {
+    const closeButton = document.getElementById('close-cta-popup');
+    if (closeButton) {
+        closeButton.addEventListener('click', closePopup);
+    }
+
+    // Exemplo: Exibir o popup após 5 segundos
+    setTimeout(showPopup, 5000);
 });
 
 // Chamar ajustes ao carregar a página

@@ -136,6 +136,40 @@
         #cta-popup .bg-white {
             max-width: 90%; /* Reduz largura em telas menores */
         }
+
+        /* Ajustes para o popup CTA */
+        #cta-popup {
+            display: none; /* Inicialmente oculto */
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cta-popup.active {
+            display: flex; /* Exibir apenas quando ativo */
+        }
+
+        #cta-popup .bg-white {
+            position: relative;
+            max-width: 90%;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #close-cta-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -268,11 +302,11 @@
     </section>
 
     <!-- POPUP CTA -->
-    <div id="cta-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[9999] hidden">
+    <div id="cta-popup">
         <div class="bg-white rounded-xl p-8 max-w-xs w-full text-center shadow-2xl relative">
-            <button id="close-cta-popup" class="absolute top-2 right-3 text-black text-2xl font-bold">&times;</button>
+            <button id="close-cta-popup" class="text-black text-2xl font-bold">&times;</button>
             <div id="cta-popup-text" class="text-black text-2xl font-anton mb-6"></div>
-            <a id="cta-popup-btn" href="https://t.me/acessovipremium_bot?start=via_site_popup" target="_blank" class="cta-button font-anton text-xl bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-lg shadow-lg block transition-all duration-200 mt-4"></a>
+            <a id="cta-popup-btn" href="https://t.me/acessovipremium_bot?start=via_site_popup" target="_blank" class="cta-button font-anton text-xl bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-lg shadow-lg block transition-all duration-200"></a>
         </div>
     </div>
 
