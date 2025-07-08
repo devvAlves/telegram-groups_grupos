@@ -327,8 +327,18 @@ document.addEventListener('DOMContentLoaded', () => {
         closeButton.addEventListener('click', closePopup);
     }
 
-    // Exibir o popup após 5 segundos
-    setTimeout(showPopup, 5000);
+    // Exibir o popup ao chegar na seção "SEÇÃO TABELA COMPARATIVA"
+    const tableSection = document.querySelector('section#comparisonTitle');
+    if (tableSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    showPopup();
+                }
+            });
+        }, { threshold: 0.5 }); // Exibir quando 50% da seção estiver visível
+        observer.observe(tableSection);
+    }
 });
 
 // Chamar ajustes ao carregar a página
