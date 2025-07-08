@@ -192,112 +192,46 @@ function initializePage() {
     createSmartNotifications();
 }
 
+// Função para criar escassez dinâmica
+function createDynamicScarcity() {
+    const scarcityElement = document.getElementById('countdown');
+    if (!scarcityElement) return;
+
+    let userSlots = localStorage.getItem('available_slots') || Math.floor(Math.random() * 5) + 3;
+    localStorage.setItem('available_slots', userSlots);
+
+    setInterval(() => {
+        if (userSlots > 1) {
+            userSlots--;
+            localStorage.setItem('available_slots', userSlots);
+            updateScarcityDisplay();
+        }
+    }, 30000);
+}
+
+// Função para atualizar o contador de escassez
+function updateScarcityDisplay() {
+    const scarcityElement = document.getElementById(`countdown-${document.documentElement.lang}`);
+    if (!scarcityElement) return;
+
+    const userSlots = localStorage.getItem('available_slots');
+    scarcityElement.textContent = userSlots > 0 ? userSlots.toString().padStart(2, '0') : translations[document.documentElement.lang].soldOut || "ESGOTADO!";
+}
+
 // Função para criar notificações dinâmicas
 function createSmartNotifications() {
     const notifications = {
         pt: [
-            "🔥 Carlos M. acabou de garantir acesso VIP",
+            "🔥 Carlos M. garantiu acesso VIP",
             "⚡ Pedro S. confirmou pagamento agora",
             "🔥 João P. fez upgrade para VIP",
-            "⚡ Rafael T. confirmou pagamento via Pix",
-            "🔥 Lucas M. garantiu vaga exclusiva",
-            "⚡ André G. fez pagamento com sucesso",
-            "🔥 Felipe H. recebeu acesso vitalício",
-            "⚡ Gustavo B. aproveitou oferta limitada",
-            "🔥 Rodrigo V. garantiu conteúdo exclusivo",
-            "⚡ Vinícius Q. confirmou pagamento agora",
-            "🔥 Daniel K. entrou no grupo VIP",
-            "⚡ Eduardo Y. confirmou pagamento via Pix",
-            "🔥 Matheus I. garantiu vaga exclusiva",
-            "⚡ Tiago N. fez pagamento com sucesso",
-            "🔥 Bruno L. recebeu acesso vitalício",
-            "⚡ Henrique S. aproveitou oferta limitada",
-            "🔥 Diego R. garantiu conteúdo exclusivo",
-            "⚡ Marcelo P. confirmou pagamento agora",
-            "🔥 Rafael N. entrou no grupo VIP",
-            "⚡ André L. confirmou pagamento via Pix",
-            "🔥 Felipe J. garantiu vaga exclusiva",
-            "⚡ Gustavo H. fez pagamento com sucesso",
-            "🔥 Rodrigo F. recebeu acesso vitalício",
-            "⚡ Vinícius D. aproveitou oferta limitada",
-            "🔥 Daniel B. garantiu conteúdo exclusivo",
-            "⚡ Eduardo Z. confirmou pagamento agora",
-            "🔥 Matheus X. entrou no grupo VIP",
-            "⚡ Tiago V. confirmou pagamento via Pix",
-            "🔥 Bruno T. garantiu vaga exclusiva",
-            "⚡ Henrique R. fez pagamento com sucesso",
-            "🔥 Diego P. recebeu acesso vitalício",
-            "⚡ Marcelo N. aproveitou oferta limitada",
-            "🔥 Rafael L. garantiu conteúdo exclusivo",
-            "⚡ André J. confirmou pagamento agora",
-            "🔥 Felipe H. entrou no grupo VIP",
-            "⚡ Gustavo F. confirmou pagamento via Pix",
-            "🔥 Rodrigo D. garantiu vaga exclusiva",
-            "⚡ Vinícius B. fez pagamento com sucesso",
-            "🔥 Daniel Z. recebeu acesso vitalício",
-            "⚡ Eduardo X. aproveitou oferta limitada",
-            "🔥 Matheus V. garantiu conteúdo exclusivo",
-            "⚡ Tiago T. confirmou pagamento agora",
-            "🔥 Bruno R. entrou no grupo VIP",
-            "⚡ Henrique P. confirmou pagamento via Pix",
-            "🔥 Diego N. garantiu vaga exclusiva",
-            "⚡ Marcelo L. fez pagamento com sucesso",
-            "🔥 Rafael J. recebeu acesso vitalício",
-            "⚡ André H. aproveitou oferta limitada",
-            "🔥 Felipe F. garantiu conteúdo exclusivo",
-            "⚡ Gustavo D. confirmou pagamento agora",
-            "🔥 Rodrigo B. entrou no grupo VIP"
+            "⚡ Rafael T. confirmou pagamento via Pix"
         ],
         en: [
             "🔥 John D. just secured VIP access",
             "⚡ Mike R. confirmed payment now",
             "🔥 Chris P. upgraded to VIP",
-            "⚡ David S. paid successfully",
-            "🔥 James F. secured an exclusive spot",
-            "⚡ Paul W. completed payment",
-            "🔥 Brian G. received lifetime access",
-            "⚡ Kevin H. took advantage of the offer",
-            "🔥 Jason K. unlocked exclusive content",
-            "⚡ Eric Y. confirmed payment now",
-            "🔥 Matthew I. joined the VIP group",
-            "⚡ Justin N. paid via PayPal",
-            "🔥 Andrew L. secured an exclusive spot",
-            "⚡ Joshua S. completed payment",
-            "🔥 Daniel R. received lifetime access",
-            "⚡ Ryan P. took advantage of the offer",
-            "🔥 Brandon N. unlocked exclusive content",
-            "⚡ Jacob L. confirmed payment now",
-            "🔥 Anthony J. joined the VIP group",
-            "⚡ Samuel H. paid via Card",
-            "🔥 Benjamin F. secured an exclusive spot",
-            "⚡ Alexander D. completed payment",
-            "🔥 William B. received lifetime access",
-            "⚡ Joseph Z. took advantage of the offer",
-            "🔥 Ethan X. unlocked exclusive content",
-            "⚡ Mason V. confirmed payment now",
-            "🔥 Logan T. joined the VIP group",
-            "⚡ Elijah R. paid via Crypto",
-            "🔥 Aiden P. secured an exclusive spot",
-            "⚡ Lucas N. completed payment",
-            "🔥 Jack L. received lifetime access",
-            "⚡ Owen J. took advantage of the offer",
-            "🔥 Carter H. unlocked exclusive content",
-            "⚡ Wyatt F. confirmed payment now",
-            "🔥 Dylan D. joined the VIP group",
-            "⚡ Henry B. paid via Card",
-            "🔥 Leo Z. secured an exclusive spot",
-            "⚡ Jaxon X. completed payment",
-            "🔥 Grayson V. received lifetime access",
-            "⚡ Levi T. took advantage of the offer",
-            "🔥 Isaac R. unlocked exclusive content",
-            "⚡ Gabriel P. confirmed payment now",
-            "🔥 Julian N. joined the VIP group",
-            "⚡ Lincoln L. paid via PayPal",
-            "🔥 Hudson J. secured an exclusive spot",
-            "⚡ Hunter H. completed payment",
-            "🔥 Christian F. received lifetime access",
-            "⚡ Nolan D. took advantage of the offer",
-            "🔥 Easton B. unlocked exclusive content"
+            "⚡ David S. paid successfully"
         ]
     };
 
@@ -324,31 +258,38 @@ function createSmartNotifications() {
     }, interval);
 }
 
-// Função para criar escassez dinâmica
-function createDynamicScarcity() {
-    const scarcityElement = document.getElementById('countdown');
-    if (!scarcityElement) return;
-
-    let userSlots = localStorage.getItem('available_slots') || Math.floor(Math.random() * 5) + 3;
-    localStorage.setItem('available_slots', userSlots);
-
-    setInterval(() => {
-        if (userSlots > 1) {
-            userSlots--;
-            localStorage.setItem('available_slots', userSlots);
-            updateScarcityDisplay();
+// Função para centralizar popups em dispositivos móveis
+function adjustPopupPosition() {
+    const popup = document.getElementById('cta-popup');
+    if (popup) {
+        const popupContent = popup.querySelector('.bg-white');
+        if (popupContent) {
+            const viewportHeight = window.innerHeight;
+            const popupHeight = popupContent.offsetHeight;
+            popupContent.style.marginTop = `${Math.max((viewportHeight - popupHeight) / 2, 10)}px`;
         }
-    }, 30000);
+    }
 }
 
-// Função para atualizar o contador de escassez
-function updateScarcityDisplay() {
-    const scarcityElement = document.getElementById('countdown');
-    if (!scarcityElement) return;
-
-    const userSlots = localStorage.getItem('available_slots');
-    scarcityElement.textContent = userSlots > 0 ? userSlots.toString().padStart(2, '0') : 'ESGOTADO!';
+// Função para ajustar toasts em dispositivos móveis
+function adjustToastPosition() {
+    const toasts = document.querySelectorAll('.fixed.bottom-5');
+    toasts.forEach(toast => {
+        toast.style.left = '10px'; // Garante que o toast não fique fora da tela
+        toast.style.right = '10px';
+    });
 }
 
-// Inicializar a página ao carregar
-document.addEventListener('DOMContentLoaded', initializePage);
+// Atualizar posições ao redimensionar a janela
+window.addEventListener('resize', () => {
+    adjustPopupPosition();
+    adjustToastPosition();
+});
+
+// Chamar ajustes ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+    adjustPopupPosition();
+    adjustToastPosition();
+    // Inicializar a página
+    initializePage();
+});

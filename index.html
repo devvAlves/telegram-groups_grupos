@@ -17,8 +17,8 @@
     <link rel="alternate" hreflang="en" href="https://telegramputarianovinhasonlyfans.live/?lang=en" />
     <link rel="alternate" hreflang="x-default" href="https://telegramputarianovinhasonlyfans.live/" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com" onerror="console.error('Tailwind CDN failed to load. Please check your connection.')"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" onerror="console.error('Animate.css CDN failed to load. Please check your connection.')"/>
 
     <!-- SCHEMA.ORG FAQ - Também precisa ser dinâmico se o SEO for hardcore, mas por agora deixamos em PT -->
     <script type="application/ld+json">
@@ -95,6 +95,7 @@
             background-color: #E50914 !important;
             color: #fff !important;
             border: none;
+            padding: 1.2rem 2rem; /* Aumenta o tamanho do botão */
         }
         .cta-button:hover {
             transform: scale(1.05);
@@ -104,18 +105,36 @@
         }
         .sticky-footer { box-shadow: 0 -5px 15px rgba(0,0,0,0.5); }
         .social-proof-popup { animation: slideInUp 0.5s ease-out, fadeOut 0.5s ease-out 5.5s; }
-        .lang-switcher { cursor: pointer; opacity: 0.6; transition: opacity 0.2s; border-radius: 50%; box-shadow: 0 0 10px rgba(255,255,255,0.5); }
+        .lang-switcher { cursor: pointer; opacity: 0.6; transition: opacity 0.2s; border-radius: 50%; box-shadow: 0 0 10px rgba(255,255,255,0.5); margin: 0 0.5rem; /* Adiciona espaçamento entre botões */ }
         .lang-switcher:hover { opacity: 1; }
         @keyframes slideInUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
         /* Responsividade para o hero */
         @media (max-width: 768px) {
-            .hero-bg h1 { font-size: 2.2rem !important; }
-            .hero-bg p { font-size: 1.1rem !important; }
+            .hero-bg h1 { font-size: 2rem !important; }
+            .hero-bg p { font-size: 1rem !important; }
+            #cta-popup .bg-white {
+                padding: 1.5rem; /* Ajusta padding interno */
+            }
         }
         @media (max-width: 480px) {
-            .hero-bg h1 { font-size: 1.3rem !important; }
-            .hero-bg p { font-size: 1rem !important; }
+            .hero-bg h1 { font-size: 1.5rem !important; }
+            .hero-bg p { font-size: 0.9rem !important; }
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.2rem;
+            }
+        }
+
+        /* Ajustes para popups e overlays em dispositivos móveis */
+        #cta-popup {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #cta-popup .bg-white {
+            max-width: 90%; /* Reduz largura em telas menores */
         }
     </style>
 </head>
@@ -136,10 +155,9 @@
                 👉 QUERO ACESSO VIP AGORA 👈
             </a>
         </div>
-            <a href="#previa" class="text-white underline mt-8 block animate-bounce" data-i18n="seeMore">
-               👇Ver mais detalhes👇
-            </a>
-        </div>
+        <a href="#previa" class="text-white underline mt-8 block animate-bounce" data-i18n="seeMore">
+           👇Ver mais detalhes👇
+        </a>
     </section>
 
     <!-- SEÇÃO PRÉVIA -->
@@ -150,19 +168,19 @@
                 <div class="preview-card h-80 rounded-lg border-2 border-red-800 group relative overflow-hidden">
                     <img src="https://el.phncdn.com/gif/44169901.gif" alt="Prévia visual de packs de novinhas disponíveis no grupo VIP do Telegram" class="w-full h-full object-cover">
                     <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center pointer-events-none group-hover:bg-opacity-20 group-hover:backdrop-blur-0 backdrop-blur-md transition-all duration-300">
-                        <span class="font-anton text-2xl" data-i18n="preview1">PACKS DE NOVINHAS</span>
+                        <span class="font-anton text-2xl" data-i18n="preview1">TELEGRAM PACKS DE NOVINHAS</span>
                     </div>
                 </div>
                 <div class="preview-card h-80 rounded-lg border-2 border-red-800 group relative overflow-hidden">
                     <img src="https://el.phncdn.com/gif/51761091.gif" alt="Conteúdo exclusivo de OnlyFans vazado disponível para membros VIP" class="w-full h-full object-cover">
                     <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center pointer-events-none group-hover:bg-opacity-20 group-hover:backdrop-blur-0 backdrop-blur-md transition-all duration-300">
-                        <span class="font-anton text-2xl" data-i18n="preview2">ONLYFANS VAZADOS</span>
+                        <span class="font-anton text-2xl" data-i18n="preview2">TELEGRAM ONLYFANS VAZADOS</span>
                     </div>
                 </div>
                 <div class="preview-card h-80 rounded-lg border-2 border-red-800 group relative overflow-hidden">
                      <img src="https://el.phncdn.com/gif/51855381.gif" alt="Vídeos adultos do Privacy sem censura para assinantes do grupo VIP" class="w-full h-full object-cover">
                      <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center pointer-events-none group-hover:bg-opacity-20 group-hover:backdrop-blur-0 backdrop-blur-md transition-all duration-300">
-                        <span class="font-anton text-2xl" data-i18n="preview3">PRIVACY SEM CENSURA</span>
+                        <span class="font-anton text-2xl" data-i18n="preview3">TELEGRAM PRIVACY SEM CENSURA</span>
                     </div>
                 </div>
             </div>
@@ -172,10 +190,10 @@
     <!-- SEÇÃO PROVA SOCIAL -->
     <section class="py-20 px-4 bg-gray-900 bg-opacity-50">
         <div class="text-center animate__animated animate__fadeInUp">
-            <h3 class="font-anton text-3xl md:text-5xl uppercase" data-i18n="socialProofTitle">Não seja o último otário a entrar no grupo.</h3>
+            <h3 class="font-anton text-3xl md:text-5xl uppercase" data-i18n="socialProofTitle">Não fique de fora do grupo VIP.</h3>
             <p class="text-2xl mt-2" data-i18n="socialProofSubtitle">Junte-se aos <span class="text-red-500 font-bold">+127.451</span> membros VIPs.</p>
             <div class="bg-red-700 text-white p-4 rounded-lg inline-block mt-8 shadow-lg">
-                <span class="font-anton text-3xl" data-i18n="accessesLeft">🔥 ACESSOS RESTANTES: <span id="countdown">07</span> 🔥</span>
+                <span class="font-anton text-3xl" data-i18n="accessesLeft">🔥 ACESSOS RESTANTES: <span id="countdown-pt">07</span> 🔥</span>
             </div>
             <div class="mt-4 bg-green-600 text-white p-2 rounded-lg inline-block text-sm" data-i18n="lastPayment">
                 ✅ Último pagamento confirmado via Pix às <span id="pix-time">10:45</span>
@@ -261,11 +279,11 @@
     <!-- SEÇÃO FAQ -->
     <section id="faq" class="py-20 px-4 bg-gray-900 bg-opacity-50">
         <div class="animate__animated animate__fadeInUp">
-            <h2 class="font-anton text-4xl md:text-6xl text-center uppercase" data-i18n="faqTitle">DÚVIDAS ANTES DE METER O LOUCO?</h2>
+            <h2 class="font-anton text-4xl md:text-6xl text-center uppercase" data-i18n="faqTitle">DÚVIDAS FREQUENTES</h2>
             <div class="max-w-3xl mx-auto mt-10 space-y-4">
                 <details class="bg-black p-4 rounded-lg cursor-pointer">
                     <summary class="font-bold text-xl" data-i18n="faq1Title">O que eu vou receber no acesso VIP?</summary>
-                    <p class="mt-2" data-i18n="faq1Answer">Acesso total e irrestrito ao nosso canal VIP no Telegram com tudo que tem direito. Packs, vídeos, nudes, o caralho a quatro. Atualizado TODO DIA.</p>
+                    <p class="mt-2" data-i18n="faq1Answer">Acesso total e irrestrito ao nosso canal VIP no Telegram com conteúdos exclusivos e atualizações diárias.</p>
                 </details>
                 <details class="bg-black p-4 rounded-lg cursor-pointer">
                     <summary class="font-bold text-xl" data-i18n="faq2Title">Como faço o pagamento?</summary>
