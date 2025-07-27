@@ -62,10 +62,10 @@ const translations = {
                 soldOut: "ESGOTADO!",
                 // Links específicos para português
                 links: {
-                    hero: "https://t.me/acessovipremium_bot?start=via_site",
-                    mid: "https://t.me/acessovipremium_bot?start=via_site_mid",
-                    footer: "https://t.me/acessovipremium_bot?start=via_site_footer",
-                    popup: "https://t.me/acessovipremium_bot?start=via_site_popup"
+                    hero: "https://t.me/acessovipremium_bot?start=normal",
+                    mid: "https://t.me/acessovipremium_bot?start=normal",
+                    footer: "https://t.me/acessovipremium_bot?start=normal",
+                    popup: "https://t.me/acessovipremium_bot?start=normal"
                 }
             },
             en: {
@@ -130,10 +130,10 @@ const translations = {
                 soldOut: "SOLD OUT!",
                 // Links específicos para inglês
                 links: {
-                    hero: "https://t.me/acessovipremium_bot?start=via_site",
-                    mid: "https://t.me/acessovipremium_bot?start=via_site_mid",
-                    footer: "https://t.me/acessovipremium_bot?start=via_site_footer",
-                    popup: "https://t.me/acessovipremium_bot?start=via_site_popup"
+                    hero: "https://t.me/acessovipremium_bot?start=normal",
+                    mid: "https://t.me/acessovipremium_bot?start=normal",
+                    footer: "https://t.me/acessovipremium_bot?start=normal",
+                    popup: "https://t.me/acessovipremium_bot?start=normal"
                 }
             }
         };
