@@ -62,10 +62,10 @@ const translations = {
                 soldOut: "ESGOTADO!",
                 // Links específicos para português
                 links: {
-                    hero: "https://t.me/acessovipremium_bot?start=normal",
-                    mid: "https://t.me/acessovipremium_bot?start=normal",
-                    footer: "https://t.me/acessovipremium_bot?start=normal",
-                    popup: "https://t.me/acessovipremium_bot?start=normal"
+                    hero: "https://t.me/hubvips18_bot?start=normal",
+                    mid: "https://t.me/hubvips18_bot?start=normal",
+                    footer: "https://t.me/hubvips18_bot?start=normal",
+                    popup: "https://t.me/hubvips18_bot?start=normal"
                 }
             },
             en: {
@@ -130,10 +130,10 @@ const translations = {
                 soldOut: "SOLD OUT!",
                 // Links específicos para inglês
                 links: {
-                    hero: "https://t.me/acessovipremium_bot?start=normal",
-                    mid: "https://t.me/acessovipremium_bot?start=normal",
-                    footer: "https://t.me/acessovipremium_bot?start=normal",
-                    popup: "https://t.me/acessovipremium_bot?start=normal"
+                    hero: "https://t.me/hubvips18_bot?start=normal",
+                    mid: "https://t.me/hubvips18_bot?start=normal",
+                    footer: "https://t.me/hubvips18_bot?start=normal",
+                    popup: "https://t.me/hubvips18_bot?start=normal"
                 }
             }
         };
