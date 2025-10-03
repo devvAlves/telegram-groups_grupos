@@ -22,7 +22,7 @@ const translations = {
                     ctaExtra: "👉 QUERO ACESSO IMEDIATO AOS PACKS 👈",
                     mostWantedTitle: "O VAZADO MAIS PROCURADO DO ANO",
                     mostWantedSubtitle: "Além do 17x2, temos o conteúdo que todos querem ver e não acham.",
-                    mostWantedNames: ["VÍDEO 17x2 CINEMA", "Key Alves", "Mel Maia", "Larissa Manoela", "Vídeos Exclusivos", "Cenas Deletadas", "E MUITO MAIS..."],
+                    mostWantedNames: ["VÍDEO 17x2 CINEMA", "5X1 NO ONIBUS DE CASCAVEL", "Mel Maia", "Larissa Manoela", "Vídeos Exclusivos", "Cenas Deletadas", "E MUITO MAIS..."],
                     comparisonTitle: "A ESCOLHA É TUA, MANO.",
                     tableBenefit: "Benefício",
                     tableFree: "FREE (Você agora)",
