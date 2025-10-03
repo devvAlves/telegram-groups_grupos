@@ -1,44 +1,44 @@
 // Dicionário de traduções
 const translations = {
             pt: {
-                metaTitle: "🔥 Packs VIP: Larissa Manoela, Key Alves, Mel Maia e Mais no Telegram Putarias 🔥",
-                metaDescription: "Acesso VIP aos packs e vídeos de Larissa Manoela, Key Alves, Mel Maia, MC Mirella e outras. Conteúdo do OnlyFans e Privacy direto no seu Telegram. Entre no grupo mais quente.",
-                mainHeadline: "🔥 Acesso Proibido ao Conteúdo VIP +18 🔥",
-                subHeadline: "Os melhores Packs de Famosas, vídeos de OnlyFans e nudes do Privacy que os donos da internet não querem que você veja. Tudo no nosso grupo Telegram, sem censura.",
-                ctaHero: "👉 QUERO ACESSO VIP AGORA 👈",
-                seeMore: "👇Ver mais detalhes👇",
-                previewTitle: "Uma Prévia dos Packs e Vídeos VIP...",
-                preview1: "PACKS DE NOVINHAS",
-                preview2: "ONLYFANS VAZADOS",
-                preview3: "PRIVACY SEM CENSURA",
-                socialProofTitle: "Não seja o último otário a entrar no grupo.",
-                socialProofSubtitle: "Junte-se aos <span class='text-red-500 font-bold'>+127.451</span> membros VIPs.",
-                accessesLeft: "🔥 ACESSOS RESTANTES: <span id='countdown'>07</span> 🔥",
-                lastPayment: "✅ Último pagamento confirmado via Pix às <span id='pix-time'>10:45</span>",
-                testimonial1Text: "Mano, melhor grupo de packs da vida. Cancelei todas as outras assinaturas. Isso aqui é outro nível de conteúdo adulto.",
-                testimonial1Author: "- Lucas S., Membro VIP",
-                testimonial2Text: "Puta que pariu, tem vídeo do OnlyFans aqui que eu nem sabia que existia. Valeu cada centavo, porra!",
-                testimonial2Author: "- Fernando R., Membro desde 2023",
-                ctaExtra: "👉 QUERO ACESSO IMEDIATO AOS PACKS 👈",
-                mostWantedTitle: "OS PACKS MAIS PROCURADOS",
-                mostWantedSubtitle: "Acesso imediato ao conteúdo que todos querem ver.",
-                mostWantedNames: ["Larissa Manoela", "Key Alves", "Mel Maia", "MC Mirella", "Tati Zaqui", "Geisy Arruda", "E MUITO MAIS..."],
-                comparisonTitle: "A ESCOLHA É TUA, MANO.",
-                tableBenefit: "Benefício",
-                tableFree: "FREE (Você agora)",
-                tableVIP: "VIP (Elite)",
-                benefit1: "Packs Vazados semanais",
-                benefit2: "Influencers exclusivas",
-                benefit3: "Vídeos \"Caiu na Net\"",
-                benefit4: "Conteúdo Privacy",
-                benefit5: "Acesso a Packs de Famosas",
-                benefit6: "Conteúdo exclusivo de Novinhas",
-                benefit7: "Atualizações diárias",
-                benefit8: "Acesso vitalício",
-                benefit9: "Suporte privado",
-                faqTitle: "DÚVIDAS ANTES DE METER O LOUCO?",
-                faq1Title: "O que eu vou receber no acesso VIP?",
-                faq1Answer: "Acesso total e irrestrito ao nosso canal VIP no Telegram com tudo que tem direito. Packs, vídeos, nudes, o caralho a quatro. Atualizado TODO DIA.",
+                    metaTitle: "🔥 ASSISTIR VÍDEO 17x2 COMPLETO - VAZADO DO CINEMA NO TELEGRAM 🔥",
+                    metaDescription: "Acesso liberado ao vídeo 17x2 que viralizou. Assista ao vazado completo e sem cortes dos 17 caras e 2 novinhas no nosso grupo VIP do Telegram. Conteúdo explícito.",
+                    mainHeadline: "🔥 O VÍDEO PROIBIDO DO CINEMA (17x2) TÁ AQUI 🔥",
+                    subHeadline: "Acesso liberado ao vazado que todos estão procurando. Assista ao vídeo completo e sem cortes dos 17 caras e 2 novinhas no nosso grupo VIP do Telegram. Sem censura.",
+                    ctaHero: "👉 QUERO ASSISTIR O VÍDEO 17x2 AGORA 👈",
+                    seeMore: "👇Ver mais detalhes👇",
+                    previewTitle: "Uma Prévia do Que Te Espera no Grupo VIP...",
+                    preview1: "PACKS DE NOVINHAS",
+                    preview2: "ONLYFANS VAZADOS",
+                    preview3: "PRIVACY SEM CENSURA",
+                    socialProofTitle: "Não seja o último otário a entrar no grupo.",
+                    socialProofSubtitle: "Junte-se aos <span class='text-red-500 font-bold'>+127.451</span> membros VIPs.",
+                    accessesLeft: "🔥 ACESSOS RESTANTES: <span id='countdown'>07</span> 🔥",
+                    lastPayment: "✅ Último pagamento confirmado via Pix às <span id='pix-time'>10:45</span>",
+                    testimonial1Text: "Mano, melhor grupo de packs da vida. Cancelei todas as outras assinaturas. Isso aqui é outro nível de conteúdo adulto.",
+                    testimonial1Author: "- Lucas S., Membro VIP",
+                    testimonial2Text: "Puta que pariu, tem vídeo do OnlyFans aqui que eu nem sabia que existia. Valeu cada centavo, porra!",
+                    testimonial2Author: "- Fernando R., Membro desde 2023",
+                    ctaExtra: "👉 QUERO ACESSO IMEDIATO AOS PACKS 👈",
+                    mostWantedTitle: "O VAZADO MAIS PROCURADO DO ANO",
+                    mostWantedSubtitle: "Além do 17x2, temos o conteúdo que todos querem ver e não acham.",
+                    mostWantedNames: ["VÍDEO 17x2 CINEMA", "Key Alves", "Mel Maia", "Larissa Manoela", "Vídeos Exclusivos", "Cenas Deletadas", "E MUITO MAIS..."],
+                    comparisonTitle: "A ESCOLHA É TUA, MANO.",
+                    tableBenefit: "Benefício",
+                    tableFree: "FREE (Você agora)",
+                    tableVIP: "VIP (Elite)",
+                    benefit1: "Packs Vazados semanais",
+                    benefit2: "Influencers exclusivas",
+                    benefit3: "Vídeos \"Caiu na Net\"",
+                    benefit4: "Conteúdo Privacy",
+                    benefit5: "Acesso a Packs de Famosas",
+                    benefit6: "Conteúdo exclusivo de Novinhas",
+                    benefit7: "Atualizações diárias",
+                    benefit8: "Acesso vitalício",
+                    benefit9: "Suporte privado",
+                    faqTitle: "DÚVIDAS ANTES DE METER O LOUCO?",
+                    faq1Title: "O vídeo 17x2 está mesmo no grupo VIP?",
+                    faq1Answer: "Sim. O vídeo completo e sem cortes é um dos nossos conteúdos exclusivos para membros. Além dele, você terá acesso a tudo que tem direito. Packs, vídeos, nudes, o caralho a quatro. Atualizado TODO DIA.",
                 faq2Title: "Como faço o pagamento?",
                 faq2Answer: "Clicando no botão, tu vai ser direcionado. Pix, cartão, boleto... a gente aceita até tua alma.",
                 faq3Title: "O acesso ao grupo de Telegram é sigiloso?",
@@ -62,10 +62,10 @@ const translations = {
                 soldOut: "ESGOTADO!",
                 // Links específicos para português
                 links: {
-                    hero: "https://t.me/hubviip_bot?start=normal",
-                    mid: "https://t.me/hubviip_bot?start=normal",
-                    footer: "https://t.me/hubviip_bot?start=normal",
-                    popup: "https://t.me/hubviip_bot?start=normal"
+                    hero: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    mid: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    footer: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    popup: "https://t.me/+89xs3a5_wPM0ZTFh"
                 }
             },
             en: {
@@ -130,10 +130,10 @@ const translations = {
                 soldOut: "SOLD OUT!",
                 // Links específicos para inglês
                 links: {
-                    hero: "https://t.me/hubviip_bot?start=normal",
-                    mid: "https://t.me/hubviip_bot?start=normal",
-                    footer: "https://t.me/hubviip_bot?start=normal",
-                    popup: "https://t.me/hubviip_bot?start=normal"
+                    hero: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    mid: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    footer: "https://t.me/+89xs3a5_wPM0ZTFh",
+                    popup: "https://t.me/+89xs3a5_wPM0ZTFh"
                 }
             }
         };
@@ -348,4 +348,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar a página
     initializePage();
 });
-
