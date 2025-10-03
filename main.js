@@ -2,7 +2,7 @@
 const translations = {
             pt: {
                     metaTitle: "🔥 ASSISTIR VÍDEO 17x2 COMPLETO - VAZADO DO CINEMA NO TELEGRAM 🔥",
-                    metaDescription: "Acesso liberado ao vídeo 17x2 que viralizou. Assista ao vazado completo e sem cortes dos 17 caras e 2 novinhas no nosso grupo VIP do Telegram. Conteúdo explícito.",
+                    metaDescription: "Acesso liberado ao vídeo 17x2 que viralizou. Assista ao vazado completo e sem cortes como: 17x2 no cinema, 5x1 em Cascavel e muito mais no nosso grupo VIP do Telegram. Conteúdo explícito.",
                     mainHeadline: "🔥 O VÍDEO PROIBIDO DO CINEMA (17x2) TÁ AQUI 🔥",
                     subHeadline: "Acesso liberado ao vazado que todos estão procurando. Assista ao vídeo completo e sem cortes como: 17x2 no cinema, 5x1 em Cascavel e muito mais no nosso grupo VIP do Telegram. Sem censura.",
                     ctaHero: "👉 QUERO ASSISTIR O VÍDEO 17x2 AGORA 👈",
