@@ -9,7 +9,7 @@
 
   // ── LINKS DE DESTINO ────────────────────────────────────────
   // PT-BR → checkout apextry (UTMs já embutidas no link)
-  const LINK_PT = 'https://apextry.com/go/acessovipoficial?utm_source=vazadostwt&utm_campaign=vazados&utm_medium=meio&utm_content=vazadoos&utm_term=termo&utm_id=id&apx=rvdie4u0&code=vazados';
+  const LINK_PT = 'https://apextry.com/go/acessovipoficial?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}&utm_id={{campaign.id}}&apx=rvdie4u0&code=landingpage';
   // EN → bot dedicado gringos
   const LINK_EN = 'https://t.me/clubxglobal_bot?start=matrizhub';
 
